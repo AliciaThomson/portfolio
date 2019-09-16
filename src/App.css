@@ -19,6 +19,7 @@
   padding: 2px;
   border-radius: 1.5em;
   display: inline-block;
+  color: #0e244d;
 }
 .button .inner {
   background: #fff;
@@ -32,7 +33,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   color:#514c70;
-  font-size: 1.75em;
+  font-size: 1.5vw;
 }
 h1, h2, h3 {
   color:#0e244d;
@@ -385,4 +386,24 @@ a {
   position: absolute;
   right: 35px;
   bottom: 35px;
+}
+.my-work .row .column .body {
+  margin-bottom: 1.3em;
+}
+.button.expand .inner {
+  overflow: hidden;
+  max-width: 0.2em;
+  white-space: nowrap;
+  transition: max-width 500ms
+}
+.button.expand .inner .text {
+  margin-left: -5.6em;
+  padding-right: 0.25em;
+  transition: margin-left 500ms
+}
+.button.expand:hover .inner {
+  max-width: 10em;
+}
+.button.expand:hover .inner .text {
+  margin-left: 0em;
 }

@@ -3,6 +3,9 @@ import RoundedSquare from '../images/RoundedSquare'
 import projectElement1 from '../images/project-element-1.svg'
 import projectElement2 from '../images/project-element-2.svg'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 const Project = props => {
     return (
         <div className="row">
@@ -24,10 +27,8 @@ const Project = props => {
                         <p>{props.body}</p>
                     </div>
                     {props.link !== undefined ? (
-                        <a href={props.link} className="button"><span class="inner">Visit Site</span></a>
-                    ) : (
-                            <span className="button"><span class="inner">Coming Soon</span></span>
-                        )}
+                        <a href={props.link} className="button expand"><span class="inner"><span className="text">Visit Site</span> <FontAwesomeIcon icon={faArrowRight} /></span></a>
+                    ) : (<span className="button"><span class="inner">Coming Soon</span></span>)}
                 </div>
             </div>
         </div>

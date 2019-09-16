@@ -30,7 +30,7 @@ const BannerDesignElement = () => (
 				<mask maskUnits="userSpaceOnUse" x="0" y="0.42" width="1600" height="741.58" id="bg-element-13">
 					<g filter="url(#Adobe_OpacityMaskFilter)">
 						
-						<image overflow="visible" width="6684" height="3107" href="EA382BE0384D0ACA2.jpg"  transform="matrix(0.24 0 0 0.24 -2.0005 -1.5801)">
+						<image overflow="visible" width="6684" height="3107" href={process.env.PUBLIC_URL + '/EA382BE0384D0ACA2.jpg'}  transform="matrix(0.24 0 0 0.24 -2.0005 -1.5801)">
 						</image>
 					</g>
 				</mask>
@@ -62,7 +62,7 @@ const BannerDesignElement = () => (
 				</defs>
 				<mask maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="476.746" id="bg-element-15">
 					<g filter="url(#Adobe_OpacityMaskFilter)">
-						<image overflow="visible" width="6684" height="2004" href="F01BA1EB6C78785.jpg"  transform="matrix(0.24 0 0 0.24 -1.9995 -2)">
+						<image overflow="visible" width="6684" height="2004" href={process.env.PUBLIC_URL + '/F01BA1EB6C78785.jpg'}  transform="matrix(0.24 0 0 0.24 -1.9995 -2)">
 						</image>
 					</g>
 				</mask>
@@ -93,7 +93,7 @@ const BannerDesignElement = () => (
 				<mask maskUnits="userSpaceOnUse" x="0.706" y="0.479" width="304.294" height="141.521" id="bg-element-17">
 					<g filter="url(#Adobe_OpacityMaskFilter)">
 						
-						<image overflow="visible" width="1285" height="607" href="7AAB493F82C671E2.jpg"  transform="matrix(0.24 0 0 0.24 -1.2939 -1.5205)">
+						<image overflow="visible" width="1285" height="607" href={process.env.PUBLIC_URL + '/7AAB493F82C671E2.jpg'}  transform="matrix(0.24 0 0 0.24 -1.2939 -1.5205)">
 						</image>
 					</g>
 				</mask>
@@ -122,7 +122,7 @@ const BannerDesignElement = () => (
 				<mask maskUnits="userSpaceOnUse" x="0" y="0" width="154.494" height="203.592" id="bg-element-19">
 					<g filter="url(#Adobe_OpacityMaskFilter)">
 						
-						<image overflow="visible" width="661" height="865" href="E74E99EA13E5B7E02.jpg"  transform="matrix(0.24 0 0 0.24 -1.9995 -2.0005)">
+						<image overflow="visible" width="661" height="865" href={process.env.PUBLIC_URL + '/E74E99EA13E5B7E02.jpg'}  transform="matrix(0.24 0 0 0.24 -1.9995 -2.0005)">
 						</image>
 					</g>
 				</mask>
