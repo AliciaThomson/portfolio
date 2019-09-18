@@ -57,6 +57,7 @@ const MyWork = () => {
         }, {
             label: 'Mandy Madness',
             logo: mandyLogo,
+            link: 'https://mandymadness.com/',
             bgImage: mandyBg,
             body: [
                 '',
