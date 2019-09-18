@@ -13,19 +13,15 @@
   font-weight:bold
 }
 .button {
-  background: linear-gradient(45deg, rgba(128,97,170,1) 0%, rgba(182,95,165,1) 100%);
+  background-image: url(/button.svg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 2px;
-  border-radius: 1.5em;
   display: inline-block;
   color: #0e244d;
-}
-.button .inner {
-  background: #fff;
-  padding: 0.5em 1em;
-  border-radius: 1.5em;
-  display: block;
+  padding: 0.8em 1.5em 0.8em 1.25em;
 }
 
 /* Typography */
@@ -64,17 +60,43 @@ a {
   justify-content: space-between;
   align-items: center;
 } 
-.page-header .logo {
+.logo {
   font-size: 1.9vw;
-  color:#0e244d
+  color:#0e244d;
+  font-family: 'Roboto', sans-serif;
 }
-.page-header .main-menu li {
+.navigation {
+  padding:0;
+  margin: 0 -20px;
+}
+.navigation li {
   margin: 0 20px;
   font-size: 1.25vw;
   display: inline-block;
 }
-.page-header .main-menu li a {
+.navigation li a {
   color:#514c70
+}
+
+/* Footer */
+
+.page-footer {
+  padding-bottom:1em;
+}
+.page-footer .design-wrapper {
+  margin-top: -15%;
+  margin-bottom: -7%;
+}
+.page-footer .container {
+  position: relative;
+  z-index: 2;
+  padding-left: 8%;
+}
+.page-footer .container .logo {
+  margin-top: 0.5em;
+}
+.page-footer .container .navigation {
+  margin: 0.5em -20px;
 }
 
 /* Banner */
@@ -87,62 +109,109 @@ a {
   font-size: 5vw;
   position: absolute;
   width: 50vw;
-  left: 5vw;
-  top: 40px;
+  left: 8vw;
+  top: 4vw;
   text-align: left;
   text-shadow: none;
 }
 .design-wrapper {
   position: relative;
   overflow: hidden;
+  padding-bottom: 5%;
 }
 .design-wrapper svg {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left:-50%;
   width:100%
 }
-.design-wrapper #bg-layer-2 {
+.bg-blob {
   position: absolute;
-  top: 20vh;
+  z-index: -2;
+  top: 0;
 }
-.design-wrapper #bg-layer-3 {
-  position: absolute;
-  margin-left: 55%;
-  top: 50vh;
-}
-.about-me .design-wrapper #bg-layer-5 {
-  position: absolute;
-  top: 40vh;
-}
-.about-me .design-wrapper #bg-layer-6 {
-  position: absolute;
-  top: 75vh;
+.my-skills .design-wrapper #bg-layer-8 {  
+  position:relative;
 }
 .my-skills .design-wrapper #bg-layer-9 {
-  position: absolute;
-  top: 15vh;
-
+  top: 12.5%;
 }
 .my-skills .design-wrapper #bg-layer-10 {
-  position: absolute;
-  top: 28vh;
-  margin-left: 74%;
-
+  top: 22%;
+  margin-left: 25%;
 }
 .my-skills .design-wrapper #bg-layer-11 {
-  position: absolute;
-  top: 40vh;
-
+  top: 30%;
 }
+.page-footer .design-wrapper #bg-layer-16 {
+  top: 30%;
+}
+.page-footer .design-wrapper #bg-layer-15 {  
+  position:relative;
+}
+.page-banner .design-wrapper #bg-layer-1 {  
+  position:relative;
+}
+.page-banner .design-wrapper #bg-layer-2 {
+  top: 11%;
+}
+.page-banner .design-wrapper #bg-layer-3 {
+  top: 28%;
+  margin-left: 7%;
+}
+.about-me .design-wrapper #bg-layer-4 {
+  position:relative;
+}
+.about-me .design-wrapper #bg-layer-5 {
+  top: 26%;
+}
+.about-me .design-wrapper #bg-layer-6 {
+  top: 46%;
+}
+
 .bubble {
   position: absolute;
   z-index: 2;
 }
 .bubble1 {
   left: 50%;
+  top: 38%;
 }
+.bubble2 {
+  top: 52%;
+}
+.bubble3 {
+  top: 35%;
+  left: 75%;
+}
+.bubble4 {
+  top: 55%;
+  left: 10%;
+}
+.bubble5 {
+  top: 42%;
+  left: 11%;
+}
+.bubble6 {
+  top: 65%;
+}
+.bubble7 {
+  top: 60%;
+}
+.bubble8 {
+  left: 60%;
+  top: 75%;
+}
+.bubble9 {
+  top: 50%;
+  left: -50px;
+}
+.bubble10 {
+  top: 72%;
+  left: 86%;
+}
+
 
 /* Content */
 
@@ -157,7 +226,7 @@ a {
   transform: rotate(-90deg);
   transform-origin: 39% 118%;
   left: 0;
-  margin-bottom:0;
+  margin:0;
   line-height: 1;
 }
 .section-label.right-side {
@@ -171,11 +240,24 @@ a {
   width: 50%;
   padding: 0 15px;
   box-sizing: border-box;
-  vertical-align: top
+  vertical-align: top;
+  position: relative
+}
+.half-block:nth-child(odd) {
+  padding-left: 0;
+}
+.half-block:nth-child(even) {
+  padding-right: 0;
+}
+.half-block img {
+  max-width: 100%
 }
 
 /* About Me */
 
+.about-me {
+  position: relative;
+}
 .about-me .container {
   max-width: 1200px;
   padding: 0 100px;
@@ -185,6 +267,7 @@ a {
   font-weight: 100;
   text-align: left;
   text-shadow: none;
+  margin-bottom: 0;
 }
 .about-me .greeting .small-text {
   display: block;
@@ -198,8 +281,15 @@ a {
   text-align: center
 }
 .about-me .design-wrapper {
-  margin-top: -200px;
-  margin-bottom: -200px;
+  margin-top: -14%;
+  margin-bottom: -15%;
+}
+.about-me .bg-blob {
+  z-index: -2;
+  top: 2%;
+  right: 50%;
+  margin-right: -34%;
+  width: 33%;
 }
 
 /* My Skills */
@@ -208,19 +298,17 @@ a {
   position: relative
 }
 .my-skills .section-label {
-  transform-origin: 55% 148%;
+  transform-origin: 45% 169%;
 }
 .my-skills .container {
   position: relative;
   z-index: 2;
 }
 .my-skills .bg-blob {
-  position: absolute;
-  z-index: -2;
-  top:0
+  width:100%
 }
 .my-skills .design-wrapper {
-  margin-bottom: -550px;
+  margin-bottom: -35%;
 }
 
 .my-skills .cards-wrapper {
@@ -235,14 +323,14 @@ a {
   --bg-filter-opacity: 0.5;
   background:#fff;
   height: 7.75em;
-  width: 7.75em;
+  width: 100%;
   font-size: 1.5em;
   border-radius: 1em;
   box-sizing: border-box;
   padding: 0.5em;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 5em -1em black;
+  box-shadow: 0 0 1em 0.25em rgba(14, 36, 77, 0.15);
   transition: all, 0.6s;
   position: relative;
   overflow: hidden;
@@ -251,9 +339,14 @@ a {
 .card div {
   width:100%
 }
+.card .icon {
+  height: 8vw;
+}
 .card h3 {
   font-family: 'Quicksand', sans-serif;
-  font-size:1.75vw
+  font-size:1.75vw;
+  margin-top: 0.5em;
+  height: 1em;
 }
 .card:hover {
   transform: rotate(0);
@@ -288,8 +381,11 @@ a {
 
 /* My Work */
 
+.my-work {
+  position: relative;
+}
 .my-work .section-label {
-  transform-origin: 84% 233%;
+  transform-origin: 96% 264%;
 }
 .my-work .container {
   position: relative;
@@ -314,96 +410,430 @@ a {
   position:relative;    
   z-index: -1;
 }
-.my-work .row {
+.my-work .projects {
+  position: relative;
+}
+.my-work .bg-blob {
+  width: 90%;
+  top:20%
+}
+.project {
   display: flex;
   width: 100%;
   height: 35vw;
   align-items: center;
 }
-.my-work .row:nth-child(odd) {
+.project:nth-child(odd) {
   direction: rtl;
 }
-.my-work .row:nth-child(odd) .column {
+.project:nth-child(odd) .column {
   direction: ltr;
 }
-.my-work .row .column {
+.project .column {
   width: 50vw;
   background-size: cover;
   background-position: center center;
   position: relative;
 }
-.my-work .row .column .content-container {
-  padding: 1.5em;
+.project .column .content-container {
+  padding: 2.5em;
 }
-.my-work .row .column .content-container h3 {
+.project .column .content-container h3 {
   margin-top:0;
   margin-bottom: 0;
 }
-.my-work .row .column .content-container p {
-  margin: 0.75em 0;
+.project .column .content-container .body {
+  direction: rtl;
+  position: relative;
+  margin-top:1em
 }
-.my-work .row .column.image-container {
+.project .column .content-container .body:before {
+  content:'';
+  position: absolute;    
+  left: 21px;
+  width: 2px;
+  height: calc(100% - 5px);
+  z-index: -1;
+  background-image: linear-gradient(#999999 33%, rgba(255,255,255,0) 0%);
+  background-position: right;
+  background-size: 1px 20px;
+  background-repeat: repeat-y;
+}
+.project .column .content-container .body .inner {
+  direction: rtl;
+  text-align: left;
+  overflow-y: auto;
+  max-height: 5.7em;
+  padding-left: 1.5em;
+}
+.project .column .content-container .body .inner::-webkit-scrollbar {
+  width: 46px;
+  padding:5px;
+  background:transparent
+}
+.project .column .content-container .body .inner::-webkit-scrollbar-thumb {
+  background-image: url('/scroll-handle.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  z-index: 2
+}
+.project .column .content-container p {
+  margin: 0.75em 0;
+  direction: rtl;
+  margin-top:0;
+}
+.project .column.image-container {
   background-size: 50vw auto;
   height:100%
 }
-.my-work .row .column.image-container:before {
+.project .column.image-container:before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(14, 36, 77, 0.1)
 }
-.my-work .row .column .logo-card,
-.my-work .row .column .rounded-clip {
-    width: 383px;
-    height: 383px;
+.project .column .logo-card,
+.project .column .rounded-clip {
+    width: 30vw;
+    height: 30vw;
     position: absolute;
     left: 50%;
-    margin-left: -191px;
+    transform: translate(-50%, -50%);
     top: 50%;
-    margin-top: -191px;
-    -webkit-clip-path: url(#svg-path);
-    clip-path: url(#svg-path);
+    border-radius: 15%;
 }
-.my-work .row .column .rounded-clip {
+.project .column .rounded-clip {
   background-size: 50vw auto;
   background-position: center center;
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
-.my-work .row .column .logo-card {
+.project .column .logo-card {
   background: rgba(255, 255, 255, 0.6);
   display: flex;
   text-align: center;
   justify-content: center;
+  padding: 3em;
+  box-sizing: border-box;
 }
-.my-work .row .column .logo-card .project-element1 {
+.project .column .logo-card .logo {
+  max-height: 100%; 
+}
+.project .column .logo-card .project-element1 {
   position: absolute;
-  left: 30px;
-  top: 30px;
+  max-width: 2.25vw;
+  left: 3vw;
+  top: 3vw;
 }
-.my-work .row .column .logo-card .project-element2 {
+.project .column .logo-card .project-element2 {
   position: absolute;
-  right: 35px;
-  bottom: 35px;
+  right: 3vw;
+  bottom: 3vw;
+  max-width: 4vw;
 }
-.my-work .row .column .body {
+.project .column .body {
   margin-bottom: 1.3em;
 }
-.button.expand .inner {
+.button.expand {
   overflow: hidden;
-  max-width: 0.2em;
+  max-width: .35em;
   white-space: nowrap;
-  transition: max-width 500ms
+  transition: all 500ms;
+  padding: 0.8em 1.25em 0.8em 1.25em;
 }
-.button.expand .inner .text {
-  margin-left: -5.6em;
-  padding-right: 0.25em;
-  transition: margin-left 500ms
+.button.expand .text {
+  margin-left: -5.9em;
+  padding-right: 0.7em;
+  opacity:0;
+  transition: all 500ms;
 }
-.button.expand:hover .inner {
+.button.expand:hover {
   max-width: 10em;
+  padding: 0.8em 1.5em 0.8em 1.25em;
 }
-.button.expand:hover .inner .text {
+.button.expand:hover .text {
   margin-left: 0em;
+  opacity:1;
+}
+
+@media only screen and (max-width: 1350px) {
+  body {
+    font-size:1.2em
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+  .navigation li {
+    font-size: 1em;
+  }
+  .project .column .logo-card { 
+    padding: 2.5em;
+  }
+  .project .column .content-container .body {
+    margin-left:-5px
+  }
+  .project .column .content-container .body .inner {
+    max-height: 6.8em;
+  }
+  .project .column .content-container .body .inner::-webkit-scrollbar {
+    width: 38px;
+  }
+  .project .column .content-container .body:before {
+    left: 17px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .project .column .content-container .body .inner {
+    padding-left: 0.5em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+
+  .logo {
+    font-size: 1.3em;
+  }
+  .navigation { 
+    margin:0 -15px;
+  }
+  .navigation li { 
+    margin: 0 15px;
+  }
+  .page-footer .container .navigation {
+    margin: 0.5em -15px;
+  }
+  .my-skills .cards-wrapper {
+    grid-gap: 1em;
+  }
+  .card {
+    height: 7em;
+  }
+  .project { 
+    height: 43vw;
+  }
+  .project .column .rounded-clip,
+  .project .column.image-container {
+    background-size: auto 43vw;
+  }
+  .project .column .content-container {
+    padding: 2.5em 1.5em;
+  }
+
+}
+@media only screen and (max-width: 900px) {
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  .card {
+    height: 7em;
+  }
+  .card h3 {
+    font-size: 0.6em;
+  }
+  .about-me .greeting {
+    font-size: 2.5em;
+  }
+  .my-work .half-block {
+    width: 60%;
+    margin-left: 0;
+    padding-right: 50px;
+  }
+  .my-work .work-image { 
+    width: 55%;
+    margin: 0 -100px;
+  }
+  .project { 
+    height: 53vw;
+  }
+  .project .column .rounded-clip,
+  .project .column.image-container {
+    background-size: auto 53vw;
+  }
+  .project .column .content-container .body .inner {
+    max-height: 8.5em;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 1.12em;
+  }
+  .page-banner h2 {
+    font-size: 5.7vw;
+    width: 60vw;
+    left: 10vw;
+  }
+  .my-skills .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+  }
+  .card .icon {
+    height: 10vw;
+  }
+  .card h3 {
+    font-size: 0.7em;
+  }
+  .button.expand {
+    max-width: 10em;
+    padding: 0.8em 1.5em 0.8em 1.25em;
+  }
+  .button.expand .text {
+    margin-left: 0em;
+    opacity:1;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .about-me .container {
+    padding: 0 50px; 
+  }
+  .my-skills .design-wrapper {
+    margin-bottom: -30%;
+  }
+  .my-work .half-block {
+    margin-top: 40px;
+  }
+  .project {
+    display: block;
+    height:auto
+  }
+  .project .column {
+    width: 100%;
+  }
+  .project .column.image-container {
+    height:60vw
+  }
+  .project .column .rounded-clip, .project .column.image-container {
+    background-size: 100vw auto;
+  }
+  .project .column .logo-card, .project .column .rounded-clip {
+    width: 45vw;
+    height: 45vw;
+  }
+  .project .column .logo-card {
+    padding: 3.25em;
+  }
+  .project .column .logo-card .project-element1 {
+    position: absolute;
+    max-width: 3.5vw;
+    left: 10%;
+    top: 10%;
+  }
+  .project .column .logo-card .project-element2 {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    max-width: 6vw;
+  }
+  .project .column .content-container .body:before {
+    display:none
+  }
+  .project .column .content-container .body .inner {
+    max-height: fit-content;
+  }
+}
+@media only screen and (max-width: 600px) {
+
+  .page-header {
+    display: block
+  }
+  .page-header .navigation  {
+    padding-top: 10px;
+  }
+  .page-banner h2 {
+    font-size: 7.5vw;
+    width: 64vw;
+    left: 6.5vw;
+  }
+  .page-banner .design-wrapper {
+    margin-top: -5%;
+    margin-bottom: -5%;
+  }
+  .page-banner .design-wrapper svg {
+    width: 120%;
+    left: 46%;
+  }
+  .about-me .greeting {
+    font-size: 2.15em;
+    margin-top: 8%;
+  }
+  .my-work .half-block {
+    width: 70%;
+  }
+  .my-work .work-image { 
+    width: 52%;
+    margin: 0 -80px;
+  }
+  .project .column .logo-card {
+    padding: 2.5em;
+  }
+}
+@media only screen and (max-width: 500px) {
+
+  h2 {
+    font-size: 2em;
+  }
+  .about-me .container {
+    padding: 0 30px;
+  }
+  .my-skills .cards-wrapper { 
+    grid-gap: 15px;
+  }
+  .card .icon {
+    height: 15vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .navigation {
+    display:none
+  }
+  .page-header.container {
+    padding: 20px 7% 0;
+    margin-bottom: -15px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .half-block {
+    padding: 0 10px;
+  }
+  .half-block:nth-child(odd) {
+    padding-left: 0;
+  }
+  .half-block:nth-child(even) {
+    padding-right: 0;
+  }
+  .about-me .container {
+    padding: 0 20px;
+  }
+  .about-me .greeting {
+    font-size: 1.8em;
+  }
+  .my-work .container {
+    margin-bottom: 2em;
+  }
+  .my-work .half-block {
+    width:100%;
+    padding:0
+  }
+  .my-work .work-image {
+    display:none
+  }
+  .card {
+    height: 6em;
+  }
+  .card .icon {
+    height: 17vw;
+  }
+  .card h3 {
+    font-size: 0.62em;
+    margin-top: 0;
+  }
+  .project .column .logo-card {
+    padding: 1.5em;
+  }
 }

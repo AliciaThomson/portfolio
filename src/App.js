@@ -1,10 +1,11 @@
 import React from 'react'
 import Header from './components/Header'
 import Banner from './components/Banner'
-import './App.css'
 import AboutMe from './components/AboutMe'
 import MySkills from './components/MySkills'
 import MyWork from './components/MyWork'
+import Footer from './components/Footer'
+import './App.css'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutMe />
       <MySkills />
       <MyWork />
+      <Footer />
     </div>
   );
 }

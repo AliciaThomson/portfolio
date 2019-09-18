@@ -1,61 +1,61 @@
 import React from 'react'
-import bubble1 from '../images/bubble-1.svg'
-import bubble2 from '../images/bubble-2.svg'
-import { Controller, Scene } from 'react-scrollmagic';
-import { Tween, Timeline } from 'react-gsap';
+import bubble1 from '../../images/bubble-1.png'
+import bubble2 from '../../images/bubble-2.png'
+import { Controller, Scene } from 'react-scrollmagic'
+import { Tween, Timeline } from 'react-gsap'
 
 const BannerDesignElement = () => (
 		<Controller>
 			<Scene duration={1000} >
 				<Timeline wrapper={<div className="design-wrapper" />} >
-					<Tween position="0" from={{ top: '80%', scale: 1.5 }} to={{ top: '-50%', scale: 0.5 }}>
-						<img src={bubble1} className="bubble bubble1" alt="Design ELement" />
+					<Tween position="0" from={{ yPercent: 0, scale: 1 }} to={{ yPercent: -100, scale: 0.75 }}>
+						<img src={bubble1} className="bubble bubble1" width="20%" alt="Design ELement" />
 					</Tween>
-					<Tween position="0" from={{ top: '140%', scale: 1.5 }} to={{ top: '-50%', scale: 0.5 }}>
-						<img src={bubble2} className="bubble bubble2" alt="Design ELement" />
+					<Tween position="0" from={{ yPercent: 0, scale: 1 }} to={{ yPercent: -100, scale: 0.75 }}>
+						<img src={bubble2} className="bubble bubble2" width="17%" alt="Design ELement" />
 					</Tween>
-					<Tween position="0" from={{ top: '0%' }} to={{ top: '-15%' }}>
-						<svg version="1.1" id="bg-layer-1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1600px" height="950px" viewBox="0 0 1600 950" enableBackground="new 0 0 1600 950" space="preserve">
-							<g>
-								<g>
-									<linearGradient id="bg-element-1" gradientUnits="userSpaceOnUse" x1="800.0005" y1="950" x2="800.0004" y2="1.3438">
-										<stop offset="0.033" stopColor="#6363AD"/>
-										<stop offset="0.2342" stopColor="#7763AB"/>
-										<stop offset="0.535" stopColor="#8C63AA"/>
-										<stop offset="0.8004" stopColor="#9962A9"/>
-										<stop offset="1" stopColor="#9D62A8"/>
-									</linearGradient>
-									<path fill="url(#bg-element-1)" d="M1495.487,2.076C1288.436-8.858,1116.94,103.14,958.781,297.103
-										C819,468.523,635.071,528.348,404.509,495.351C141.163,457.664,79.249,315.82,34.579,219.707
-										C13.909,175.23,4.118,128.892,0,88.051v762.257c38.136-94.887,95.947-157.542,274.549-183.638
-										c257.538-37.632,516.565,272.312,862.72,282.625c307.818,9.171,446.174-73.998,462.731-84.758V12.794
-										C1575.976,8.371,1542.338,4.55,1495.487,2.076z"/>
-								</g>
-								<defs>
-									<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="1.343" width="1600" height="948.657">
-										
-											<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" colorInterpolationFilters="sRGB" result="source"/>
-									</filter>
-								</defs>
-								<mask maskUnits="userSpaceOnUse" x="0" y="1.343" width="1600" height="948.657" id="bg-element-2">
-									<g filter="url(#Adobe_OpacityMaskFilter)">
-										
-										<image overflow="visible" width="6684" height="3970" href={process.env.PUBLIC_URL + '/332FC2A4872CB08C.jpg'}  transform="matrix(0.24 0 0 0.24 -2 -0.6567)">
-										</image>
+					<Tween position="0" from={{ yPercent: 0 }} to={{ yPercent: 5 }}>
+						<svg id="bg-layer-1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 950">
+									<g>
+										<g>
+											<linearGradient id="bg-element-1" gradientUnits="userSpaceOnUse" x1="800.0005" y1="950" x2="800.0004" y2="1.3438">
+												<stop offset="0.033" stopColor="#6363AD"/>
+												<stop offset="0.2342" stopColor="#7763AB"/>
+												<stop offset="0.535" stopColor="#8C63AA"/>
+												<stop offset="0.8004" stopColor="#9962A9"/>
+												<stop offset="1" stopColor="#9D62A8"/>
+											</linearGradient>
+											<path fill="url(#bg-element-1)" d="M1495.487,2.076C1288.436-8.858,1116.94,103.14,958.781,297.103
+												C819,468.523,635.071,528.348,404.509,495.351C141.163,457.664,79.249,315.82,34.579,219.707
+												C13.909,175.23,4.118,128.892,0,88.051v762.257c38.136-94.887,95.947-157.542,274.549-183.638
+												c257.538-37.632,516.565,272.312,862.72,282.625c307.818,9.171,446.174-73.998,462.731-84.758V12.794
+												C1575.976,8.371,1542.338,4.55,1495.487,2.076z"/>
+										</g>
+										<defs>
+											<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="1.343" width="1600" height="948.657">
+												
+													<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" colorInterpolationFilters="sRGB" result="source"/>
+											</filter>
+										</defs>
+										<mask maskUnits="userSpaceOnUse" x="0" y="1.343" width="1600" height="948.657" id="bg-element-2">
+											<g filter="url(#Adobe_OpacityMaskFilter)">
+												
+												<image overflow="visible" width="6684" height="3970" href={process.env.PUBLIC_URL + '/332FC2A4872CB08C.jpg'}  transform="matrix(0.24 0 0 0.24 -2 -0.6567)">
+												</image>
+											</g>
+										</mask>
+										<g opacity="0.2" mask="url(#bg-element-2)">
+											<path fill="#010101" d="M1495.487,2.076C1288.436-8.858,1116.94,103.14,958.781,297.103
+												C819,468.523,635.071,528.348,404.509,495.351C141.163,457.664,79.249,315.82,34.579,219.707
+												C13.909,175.23,4.118,128.892,0,88.051v762.257c38.136-94.887,95.947-157.542,274.549-183.638
+												c257.538-37.632,516.565,272.312,862.72,282.625c307.818,9.171,446.174-73.998,462.731-84.758V12.794
+												C1575.976,8.371,1542.338,4.55,1495.487,2.076z"/>
+										</g>
 									</g>
-								</mask>
-								<g opacity="0.2" mask="url(#bg-element-2)">
-									<path fill="#010101" d="M1495.487,2.076C1288.436-8.858,1116.94,103.14,958.781,297.103
-										C819,468.523,635.071,528.348,404.509,495.351C141.163,457.664,79.249,315.82,34.579,219.707
-										C13.909,175.23,4.118,128.892,0,88.051v762.257c38.136-94.887,95.947-157.542,274.549-183.638
-										c257.538-37.632,516.565,272.312,862.72,282.625c307.818,9.171,446.174-73.998,462.731-84.758V12.794
-										C1575.976,8.371,1542.338,4.55,1495.487,2.076z"/>
-								</g>
-							</g>
-						</svg>
+								</svg>
 					</Tween>
-					<Tween position="0" from={{ top: '14%' }} to={{ top: '11%' }}>
-						<svg version="1.1" id="bg-layer-2" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1600px" height="710px" viewBox="0 0 1600 710" enableBackground="new 0 0 1600 710" space="preserve">
+					<Tween position="0" from={{ yPercent: -7.5 }} to={{ yPercent: 7.5 }}>
+						<svg id="bg-layer-2" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 710">
 							<g>
 								<g>
 									<linearGradient id="bg-element-3" gradientUnits="userSpaceOnUse" x1="800.0005" y1="708.582" x2="800.0004" y2="4.882812e-04">
@@ -91,8 +91,8 @@ const BannerDesignElement = () => (
 							</g>
 						</svg>
 					</Tween>
-					<Tween position="0" from={{ top: '36%' }} to={{ top: '25%' }}>
-						<svg version="1.1" id="bg-layer-3" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="614px" height="454px" viewBox="0 0 1600 454" enableBackground="new 0 0 614 454" space="preserve">
+					<Tween position="0" from={{ yPercent: -22 }} to={{ yPercent: 18 }}>
+						<svg id="bg-layer-3" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 454">
 						<g>
 							<g>
 								

@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerDesignElement from '../images/BannerDesignElement'
+import BannerDesignElement from './design-elements/BannerDesignElement'
 
 const Banner = () => {
     return (

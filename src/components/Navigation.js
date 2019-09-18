@@ -1,8 +1,8 @@
 import React from 'react'
 
-const MainMenu = props => {
+const Navigation = props => {
     return (
-        <ul className="main-menu">
+        <ul className="navigation">
             {props.menuItems.map(item =>
                 <li>
                     <a href={item.anchor}>
@@ -14,4 +14,4 @@ const MainMenu = props => {
     );
 }
 
-export default MainMenu;
+export default Navigation;
