@@ -1,31 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3ed6c8491411dfe5ad3a1c7b873ef1a",
+    "revision": "7cc3c86927e34795b9c5dc2aef0e3704",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "12a7632e6ce6e92fac64",
-    "url": "/portfolio/static/css/main.571aa76f.chunk.css"
+    "revision": "0c3c32ef0a519e455639",
+    "url": "/portfolio/static/css/main.7495582d.chunk.css"
   },
   {
-    "revision": "9c2650060ff1fbca522d",
-    "url": "/portfolio/static/js/2.0c4502fd.chunk.js"
+    "revision": "a036f3924c54b2db2677",
+    "url": "/portfolio/static/js/2.5f6035f4.chunk.js"
   },
   {
-    "revision": "12a7632e6ce6e92fac64",
-    "url": "/portfolio/static/js/main.1549c643.chunk.js"
+    "revision": "0c3c32ef0a519e455639",
+    "url": "/portfolio/static/js/main.e1024dd5.chunk.js"
   },
   {
     "revision": "7d277289d5425eff09b8",
     "url": "/portfolio/static/js/runtime~main.f0586756.js"
   },
   {
-    "revision": "e8a791e512ee9324b35e8498b5fd09c0",
-    "url": "/portfolio/static/media/bubble-1.e8a791e5.svg"
+    "revision": "9ccffc22276dca0cfc6f83cbe32ce1b4",
+    "url": "/portfolio/static/media/about-bg-blob.9ccffc22.svg"
   },
   {
-    "revision": "e11c46e927e1bf60097c469f91f14fbb",
-    "url": "/portfolio/static/media/bubble-2.e11c46e9.svg"
+    "revision": "d418a68225f063be87c658e0562f5b7c",
+    "url": "/portfolio/static/media/bubble-1.d418a682.png"
+  },
+  {
+    "revision": "09f37113fe55792b587d35a4bdc8fc8c",
+    "url": "/portfolio/static/media/bubble-2.09f37113.png"
+  },
+  {
+    "revision": "8ad8455a95daf8d53ba6083ac68a7ef0",
+    "url": "/portfolio/static/media/bubble-3.8ad8455a.png"
+  },
+  {
+    "revision": "7fd6a94ae5911042c581b13cf15654b8",
+    "url": "/portfolio/static/media/dufferin-bg.7fd6a94a.jpg"
+  },
+  {
+    "revision": "5fac7af96aa71af63354e6417730ea57",
+    "url": "/portfolio/static/media/dufferin-logo.5fac7af9.svg"
   },
   {
     "revision": "c165ef410124ce9eebe491ceefdaf589",
@@ -56,6 +72,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/leaves-illustration.2217b919.svg"
   },
   {
+    "revision": "e2f9a97f7eea75a7875f11d96c8ef0c8",
+    "url": "/portfolio/static/media/lph-bg.e2f9a97f.jpg"
+  },
+  {
+    "revision": "0e20b99bdcb6ba98e3cdd00034f9720b",
+    "url": "/portfolio/static/media/lph-logo.0e20b99b.svg"
+  },
+  {
+    "revision": "3f7331b07fef603fdd3667c79839c485",
+    "url": "/portfolio/static/media/mandy-bg.3f7331b0.jpg"
+  },
+  {
+    "revision": "332bfc680e18affe347e6fc137935131",
+    "url": "/portfolio/static/media/mandy-logo.332bfc68.svg"
+  },
+  {
     "revision": "17f6ef9e447080ad22b46f3985585c7f",
     "url": "/portfolio/static/media/project-element-1.17f6ef9e.svg"
   },
@@ -78,5 +110,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "07b06b49aa6e810f6cee33dd3b975be0",
     "url": "/portfolio/static/media/tps-logo.07b06b49.svg"
+  },
+  {
+    "revision": "a67c8526275b10e36148f3ceb1448649",
+    "url": "/portfolio/static/media/work-bg-blob.a67c8526.svg"
   }
 ]);
