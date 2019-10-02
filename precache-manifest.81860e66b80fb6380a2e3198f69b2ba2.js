@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee36725fbcb0bad278a031c47a95c066",
+    "revision": "bcb4cd15a2dabdadc1f3cbceb0da121b",
     "url": "/index.html"
   },
   {
-    "revision": "48f8aa42ca84a46f48a1",
-    "url": "/static/css/main.7495582d.chunk.css"
+    "revision": "defb97902e9a773a2969",
+    "url": "/static/css/main.8da1d33d.chunk.css"
   },
   {
-    "revision": "a036f3924c54b2db2677",
-    "url": "/static/js/2.5f6035f4.chunk.js"
+    "revision": "64542cd0505745787da2",
+    "url": "/static/js/2.329ac97e.chunk.js"
   },
   {
-    "revision": "48f8aa42ca84a46f48a1",
-    "url": "/static/js/main.f2e2d23b.chunk.js"
+    "revision": "defb97902e9a773a2969",
+    "url": "/static/js/main.21153a7b.chunk.js"
   },
   {
     "revision": "cb4fd463e7184abd8f6a",
@@ -78,6 +78,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0e20b99bdcb6ba98e3cdd00034f9720b",
     "url": "/static/media/lph-logo.0e20b99b.svg"
+  },
+  {
+    "revision": "27d712a6a5d837c4bfffcfbff3e3176d",
+    "url": "/static/media/mad-hatter-m-square.27d712a6.svg"
+  },
+  {
+    "revision": "46646006544500fdff7eadbc23ee93e2",
+    "url": "/static/media/mad-hatter-m.46646006.svg"
   },
   {
     "revision": "3f7331b07fef603fdd3667c79839c485",
