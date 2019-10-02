@@ -29,10 +29,10 @@ const MySkills = () => {
             <div className="container">
                 <h2>My Skills</h2>
                 <div className="cards-wrapper">
-                    <SkillsCard label="Detail Oriented" icon={magnifyingGlassIcon} />
-                    <SkillsCard label="Collaborative" icon={collaborationIcon} />
-                    <SkillsCard label="Communication Skills" icon={communicationIcon} />
-                    <SkillsCard label="Dedicated and Accountable" icon={accountableIcon} />
+                    <SkillsCard label="Detail Oriented" details="I believe the quality is in the details. When given a design I ensure the UI is a perfect match" icon={magnifyingGlassIcon} />
+                    <SkillsCard label="Collaborative" details="I enjoy working closely with designers and backend developers to bring our project to life" icon={collaborationIcon} />
+                    <SkillsCard label="Communication Skills" details="Communication is critical. I always ensure I have a clear understanding of what is needed" icon={communicationIcon} />
+                    <SkillsCard label="Dedicated and Accountable" details="I am passionate about producing quality projects from concept to completion." icon={accountableIcon} />
                 </div>
             </div>
             <MySkillsDesignElement />

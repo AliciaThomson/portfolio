@@ -16,6 +16,9 @@ import bubble3 from '../images/bubble-3.png'
 import bubble2 from '../images/bubble-2.png'
 import { Controller, Scene } from 'react-scrollmagic'
 import { Tween, Timeline } from 'react-gsap'
+import madHatterM from '../images/mad-hatter-m.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const MyWork = () => {
     const myProjects = [
@@ -23,6 +26,11 @@ const MyWork = () => {
             label: 'Toronto Police Service',
             logo: tpsLogo,
             bgImage: tpsBg,
+            tags: [
+                'Python',
+                'Django',
+                'PostgreSQL',
+            ],
             body: [
                 'The Toronto Police Service website was designed and developed to create a friendly, transparent and informative place where citizens can access resources and learn more about the service.',
                 'Leveraged Django CMS to build a fully customizable web application on the Python framework. Built custom components for all sections of the design to ensure blocks could be moved and edited as needed. Created a resource centre UI where users could find and filter a variety of different content.',
@@ -32,6 +40,12 @@ const MyWork = () => {
             logo: huronLogo,
             link: 'https://huronuc.ca/',
             bgImage: huronBg,
+            tags: [
+                'Drupal 8',
+                'PHP',
+                'MySQL',
+                'jQuery',
+            ],
             body: [
                 'Huron University is an elite Liberal Arts University offering a personalized learning experience. This website was built to provide an optimized online presence where new and current students can learn about the programs.',
                 'The Huron University website was designed and developed to be a dynamic block based website where content writers can easily add and update content that fits the design. News, events and alumni stories blocks were created so content could be added to pages dynamically. A robust contact directory was built to allow administrators the ability for contacts to be added and featured on all relevant pages.',
@@ -41,6 +55,14 @@ const MyWork = () => {
             logo: lphLogo,
             link: 'https://lambtonpublichealth.ca/',
             bgImage: lphBg,
+            tags: [
+                'WordPress 5',
+                'PHP',
+                'MySQL',
+                'SCSS',
+                'React',
+                'API Integration',
+            ],
             body: [
                 'The Public Health Department of the Lambton County was looking to build an innovative website where the general public could access information regarding public health reports, signup for classes and events and book appointments with clinics. In addition to the public facing website they wanted to create a dynamic portal where public health professionals could access resources and reports.',
                 'Leveraged Django CMS to build a fully customizable web application on the Python framework. Built custom components for all sections of the design to ensure blocks could be moved and edited as needed. Created a resource centre UI where users could find and filter a variety of different content.',
@@ -50,20 +72,17 @@ const MyWork = () => {
             logo: dufferinLogo,
             link: 'https://www.dufferincounty.ca',
             bgImage: dufferinBg,
+            tags: [
+                'Drupal 8',
+                'PHP',
+                'MySQL',
+                'jQuery',
+            ],
             body: [
                 'Dufferin County is a forward thinking community who puts their residents first. This website was built to open the lines of communication between the County departments and the community.',
                 'News and event feeds were built and designed to allow users to stay up to date with what’s going on in their community. Discovery sessions were organized around each department and the content architecture was constructed to help users find the information they are looking for. A private news and resources area called Raising the Bar was built to promote and support early childhood educators.',
             ]
-        }, {
-            label: 'Mandy Madness',
-            logo: mandyLogo,
-            link: 'https://mandymadness.com/',
-            bgImage: mandyBg,
-            body: [
-                '',
-                '',
-            ]
-        },
+        }
     ]
     return (
         <div className="my-work">
@@ -89,9 +108,15 @@ const MyWork = () => {
             <div className="container">
                 <div className="half-block">
                     <h2>My Work</h2>
-                    <p>Below are some of the projects that I have helped bring to life.</p>
+                    <p>Just some of the many projects that I have enjoyed helping to bring to life.</p>
                 </div>
                 <img src={workIllustration} className="work-image" alt="Design Element" />
+                <div class="mad-hatter-intro">
+                    <img src={madHatterM} className="mad-hatter-m" alt="Mad Hatter Technology Inc" />
+                    <h3>Mad Hatter Technology</h3>
+                    <p>During my time at Mad Hatter Technology I have had the privilege of helping to manage and develop the projects below.</p>
+                    <a href="https://www.madhattertech.ca/" className="learn-more">Learn More <FontAwesomeIcon icon={faArrowRight} /></a>
+                </div>
             </div>
             <div className="projects">
                 {myProjects.map(project =>
